@@ -12,6 +12,7 @@
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
+.phpunit.cache/
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
@@ -20,3 +21,5 @@
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
 ###< friendsofphp/php-cs-fixer ###
+
+coverage/
