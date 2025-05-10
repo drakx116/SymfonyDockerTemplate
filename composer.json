@@ -24,7 +24,6 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.75",
         "phpmd/phpmd": "^2.15",
-        "phpro/grumphp": "^2.12",
         "phpunit/phpunit": "^12.1",
         "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "7.2.*",
@@ -36,8 +35,7 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/flex": true,
-            "symfony/runtime": true,
-            "phpro/grumphp": true
+            "symfony/runtime": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
