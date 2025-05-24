@@ -23,3 +23,7 @@
 ###< friendsofphp/php-cs-fixer ###
 
 coverage/
+
+###> phpstan/phpstan ###
+phpstan.neon
+###< phpstan/phpstan ###
