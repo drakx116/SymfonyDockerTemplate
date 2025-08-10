@@ -13,26 +13,26 @@
         "doctrine/doctrine-bundle": "^2.14",
         "doctrine/doctrine-migrations-bundle": "^3.4",
         "doctrine/orm": "^3.3",
-        "symfony/console": "7.2.*",
-        "symfony/dotenv": "7.2.*",
+        "symfony/console": "7.3.*",
+        "symfony/dotenv": "7.3.*",
         "symfony/flex": "^2.5",
-        "symfony/framework-bundle": "7.2.*",
+        "symfony/framework-bundle": "7.3.*",
         "symfony/monolog-bundle": "^3.10",
-        "symfony/runtime": "7.2.*",
-        "symfony/yaml": "7.2.*"
+        "symfony/runtime": "7.3.*",
+        "symfony/yaml": "7.3.*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.75",
+        "friendsofphp/php-cs-fixer": "^3.85",
         "phparkitect/phparkitect": "^0.6.0",
         "phpmd/phpmd": "^2.15",
         "phpstan/phpstan": "^2.1",
         "phpunit/php-code-coverage": "^12.3",
         "phpunit/phpunit": "^12.1",
         "roave/security-advisories": "dev-latest",
-        "symfony/browser-kit": "7.2.*",
-        "symfony/css-selector": "7.2.*",
+        "symfony/browser-kit": "7.3.*",
+        "symfony/css-selector": "7.3.*",
         "symfony/maker-bundle": "^1.63",
-        "symfony/phpunit-bridge": "7.2.*"
+        "symfony/phpunit-bridge": "7.3.*"
     },
     "config": {
         "allow-plugins": {
@@ -82,7 +82,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.2.*"
+            "require": "7.3.*"
         }
     }
 }
