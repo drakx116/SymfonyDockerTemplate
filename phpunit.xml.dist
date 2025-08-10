@@ -5,7 +5,8 @@
          xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="tests/bootstrap.php"
          colors="true"
-         failOnRisky="true"
+         failOnDeprecation="true"
+         failOnNotice="true"
          failOnWarning="true"
          cacheDirectory=".phpunit.cache"
 >
@@ -14,7 +15,6 @@
         <ini name="error_reporting" value="-1" />
         <server name="APP_ENV" value="test" force="true" />
         <server name="SHELL_VERBOSITY" value="-1" />
-        <server name="SYMFONY_PHPUNIT_VERSION" value="12.1" />
     </php>
 
     <testsuites>
@@ -25,15 +25,24 @@
 
     <coverage>
         <report>
-            <html
-                outputDirectory="coverage"
-            />
+            <html outputDirectory="coverage"/>
         </report>
     </coverage>
 
-    <source>
+    <source
+        ignoreSuppressionOfDeprecations="true"
+        ignoreIndirectDeprecations="true"
+        restrictNotices="true"
+        restrictWarnings="true"
+    >
         <include>
             <directory>src</directory>
         </include>
+
+        <deprecationTrigger>
+            <method>Doctrine\Deprecations\Deprecation::trigger</method>
+            <method>Doctrine\Deprecations\Deprecation::delegateTriggerToBackend</method>
+            <function>trigger_deprecation</function>
+        </deprecationTrigger>
     </source>
 </phpunit>
