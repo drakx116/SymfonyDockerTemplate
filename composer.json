@@ -1,38 +1,38 @@
 {
     "name": "drakx116/symfony-docker-template",
-    "description": "Personal Docker template for Symfony 7.0",
-    "version": "0.2.1",
+    "description": "Personal Docker template for Symfony 8+",
+    "version": "0.2.2",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.3",
+        "php": ">=8.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^2.14",
-        "doctrine/doctrine-migrations-bundle": "^3.4",
-        "doctrine/orm": "^3.3",
-        "symfony/console": "7.3.*",
-        "symfony/dotenv": "7.3.*",
-        "symfony/flex": "^2.5",
-        "symfony/framework-bundle": "7.3.*",
-        "symfony/monolog-bundle": "^3.10",
-        "symfony/runtime": "7.3.*",
-        "symfony/yaml": "7.3.*"
+        "doctrine/doctrine-bundle": "^2.18.2",
+        "doctrine/doctrine-migrations-bundle": "^3.7.0",
+        "doctrine/orm": "^3.6.2",
+        "symfony/console": "7.4.*",
+        "symfony/dotenv": "7.4.*",
+        "symfony/flex": "^2.10",
+        "symfony/framework-bundle": "7.4.*",
+        "symfony/monolog-bundle": "^3.11.1",
+        "symfony/runtime": "7.4.*",
+        "symfony/yaml": "7.4.*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.85",
+        "friendsofphp/php-cs-fixer": "^3.94.2",
         "phparkitect/phparkitect": "^0.6.0",
         "phpmd/phpmd": "^2.15",
-        "phpstan/phpstan": "^2.1",
-        "phpunit/php-code-coverage": "^12.3",
-        "phpunit/phpunit": "^12.1",
+        "phpstan/phpstan": "^2.1.40",
+        "phpunit/php-code-coverage": "^12.5.3",
+        "phpunit/phpunit": "^12.5.14",
         "roave/security-advisories": "dev-latest",
-        "symfony/browser-kit": "7.3.*",
-        "symfony/css-selector": "7.3.*",
-        "symfony/maker-bundle": "^1.63",
-        "symfony/phpunit-bridge": "7.3.*"
+        "symfony/browser-kit": "7.4.*",
+        "symfony/css-selector": "7.4.*",
+        "symfony/maker-bundle": "^1.66.0",
+        "symfony/phpunit-bridge": "7.4.*"
     },
     "config": {
         "allow-plugins": {
@@ -82,7 +82,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.3.*"
+            "require": "7.4.*"
         }
     }
 }
