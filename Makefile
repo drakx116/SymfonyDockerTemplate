@@ -23,10 +23,10 @@ logs:
 	@$(DC) logs -f
 
 php:
-	@$(DC) exec $(PHP_CONTAINER) sh
+	@$(DC) exec $(PHP_CONTAINER) bash
 
 db:
-	@$(DC) exec $(DB_CONTAINER) sh
+	@$(DC) exec $(DB_CONTAINER) bash
 
 # symfony
 console:
