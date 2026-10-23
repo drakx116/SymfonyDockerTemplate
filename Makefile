@@ -3,7 +3,7 @@ DC = docker compose
 PHP_CONTAINER ?= php
 DB_CONTAINER ?= db
 
-.PHONY: up upb down restart logs php db console composer cc vendor cs stan
+.PHONY: up upb down restart logs php db console composer cc cs stan ark test ci
 
 # docker
 up:
@@ -23,10 +23,10 @@ logs:
 	@$(DC) logs -f
 
 php:
-	@$(DC) exec $(PHP_CONTAINER) sh
+	@$(DC) exec $(PHP_CONTAINER) bash
 
 db:
-	@$(DC) exec $(DB_CONTAINER) sh
+	@$(DC) exec $(DB_CONTAINER) bash
 
 # symfony
 console:
@@ -47,7 +47,11 @@ stan:
 ark:
 	@$(DC) exec $(PHP_CONTAINER) vendor/bin/phparkitect check
 
+test:
+	@$(DC) exec $(PHP_CONTAINER) vendor/bin/phpunit
+
 ci:
 	@$(MAKE) cs
 	@$(MAKE) stan
 	@$(MAKE) ark
+	@$(MAKE) test
